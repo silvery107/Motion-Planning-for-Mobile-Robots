@@ -46,6 +46,7 @@ Follow the official installation guideline to install Flightmare for both ROS an
     ```
 
 - OMPL
+    
     > https://ompl.kavrakilab.org/core/installation.html
 
     `apt-get install libompl-dev ompl-demos`
@@ -70,13 +71,15 @@ Follow the official installation guideline to install Flightmare for both ROS an
     Just remove the damn `/usr/lib/python3.7/site-packages/cv2/qt/plugins` then everything is fine....
 
 - DRM_IOCTL_I915_GEM_APERTURE failed
-    ```
+    
+    ```bash
     sudo apt-get remove beignet
     sudo apt purge beignet
     ```
 
 - beignet-opencl-icd: no supported GPU found
-    ```
+    
+    ```bash
     sudo apt-get remove beignet-opencl-icd
     sudo apt purge beignet-opencl-icd
     ```
