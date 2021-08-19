@@ -29,7 +29,7 @@ Follow the official installation guideline to install Flightmare for both ROS an
     >https://docs.opencv.org/4.5.1/d7/d9f/tutorial_linux_install.html
 
 - Open3D
-- 
+
     > http://www.open3d.org/docs/release/compilation.html
     > https://github.com/isl-org/open3d-cmake-find-package
     
