@@ -10,9 +10,9 @@ Follow the official installation guideline to install Flightmare for both ROS an
 
 > https://github.com/uzh-rpg/flightmare/wiki
 
-- flightlib
+- flightrl
 
-    `pip install -e src/flightmare/flightlib/.`
+    `pip install -e src/flightmare/flightrl/.`
 
     Add the `-e` option instead of pure install.
 
@@ -38,6 +38,7 @@ Follow the official installation guideline to install Flightmare for both ROS an
     ```bash
     git clone --recursive https://github.com/intel-isl/Open3D.git
     cd Open3D
+    util/install_deps_ubuntu.sh
     mkdir build
     cd build
     cmake -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=${HOME}/open3d_install ..
@@ -55,6 +56,7 @@ Follow the official installation guideline to install Flightmare for both ROS an
 
 - OpenCL
     > http://joey771.cn/2019/01/18/ubuntu%E5%AE%89%E8%A3%85OpenCL%E8%BF%90%E8%A1%8C%E5%8F%8A%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/
+
     > https://www.jianshu.com/p/c1133c01ce4e?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
 
     ```bash
@@ -68,7 +70,7 @@ Follow the official installation guideline to install Flightmare for both ROS an
 - Could not load the Qt platform plugin "xcb"
     > https://github.com/wkentaro/labelme/issues/842
 
-    Just remove the damn `/usr/lib/python3.7/site-packages/cv2/qt/plugins` then everything is fine....
+    Just remove the damn `/usr/lib/<your_python>/site-packages/cv2/qt/plugins` then everything is fine....
 
 - DRM_IOCTL_I915_GEM_APERTURE failed
     
